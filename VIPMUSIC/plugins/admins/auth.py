@@ -1,9 +1,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VIPMUSIC import app
-from VIPMUSIC.utils import extract_user, int_to_alpha
-from VIPMUSIC.utils.database import (
+from THUNDERMUSIC import app
+from THUNDERMUSIC.utils import extract_user, int_to_alpha
+from THUNDERMUSIC.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
