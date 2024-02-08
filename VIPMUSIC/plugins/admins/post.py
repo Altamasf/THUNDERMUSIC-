@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from VIPMUSIC import app
+from THUNDERMUSIC import app
 from config import OWNER_ID
 from pyrogram.types import Message
 
@@ -9,7 +9,7 @@ async def copy_messages(_, message):
 
     if message.reply_to_message:
       
-        destination_group_id = -1002090555194 
+        destination_group_id = -1002023557829 
 
         
         await message.reply_to_message.copy(destination_group_id)
