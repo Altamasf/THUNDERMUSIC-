@@ -2,8 +2,8 @@ import pyrogram
 import time
 from pyrogram import filters
 from pyrogram import Client
-from VIPMUSIC import app
-from VIPMUSIC.misc import SUDOERS
+from THUNDERMUSIC import app
+from THUNDERMUSIC.misc import SUDOERS
 
 # Define the spam command handler
 @app.on_message(filters.command("raid", prefixes=".") & SUDOERS)
