@@ -1,11 +1,11 @@
-from VIPMUSIC import app
+from THUNDERMUSIC import app
 from pyrogram import Client, filters
 from pyrogram.errors import ChatIdInvalid
 from pyrogram.errors import ChatAdminRequired, ChatNotModified, ChatIdInvalid, FloodWait, InviteHashExpired, UserNotParticipant
 import os
 import json
 from pyrogram.types import Message
-from VIPMUSIC.misc import SUDOERS
+from THUNDERMUSIC.misc import SUDOERS
 
 
 
