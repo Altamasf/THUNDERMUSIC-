@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter, ChatMemberStatus, ChatType
 from pyrogram.types import Message
 
-from VIPMUSIC import app
-from VIPMUSIC.utils.database import set_cmode
-from VIPMUSIC.utils.decorators.admins import AdminActual
+from THUNDERMUSIC import app
+from THUNDERMUSIC.utils.database import set_cmode
+from THUNDERMUSIC.utils.decorators.admins import AdminActual
 from config import BANNED_USERS
 
 
