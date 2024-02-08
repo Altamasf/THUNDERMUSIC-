@@ -12,13 +12,13 @@ from pyrogram import filters
 
 load_dotenv()
 
-from VIPMUSIC import app
-from VIPMUSIC.core.call import VIP
-from VIPMUSIC.misc import db
-from VIPMUSIC.utils.database import get_assistant, get_authuser_names, get_cmode
-from VIPMUSIC.utils.decorators import ActualAdminCB, AdminActual, language
-from VIPMUSIC.utils.formatters import alpha_to_int, get_readable_time
-from VIPMUSIC.mongo.afkdb import HEHE
+from THUNDERMUSIC import app
+from THUNDERMUSIC.core.call import THUNDER
+from THUNDERMUSIC.misc import db
+from THUNDERMUSIC.utils.database import get_assistant, get_authuser_names, get_cmode
+from THUNDERMUSIC.utils.decorators import ActualAdminCB, AdminActual, language
+from THUNDERMUSIC.utils.formatters import alpha_to_int, get_readable_time
+from THUNDERMUSIC.mongo.afkdb import HEHE
 from config import BANNED_USERS, adminlist, lyrical
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "")
@@ -65,7 +65,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await VIP.stop_stream_force(message.chat.id)
+        await THUNDER.stop_stream_force(message.chat.id)
     except:
         pass
     userbot = await get_assistant(message.chat.id)
@@ -92,7 +92,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await VIP.stop_stream_force(chat_id)
+            await THUNDER.stop_stream_force(chat_id)
         except:
             pass
     return await mystic.edit_text(_["reload_5"].format(app.mention))
