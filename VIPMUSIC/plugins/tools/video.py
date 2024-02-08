@@ -8,7 +8,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 from youtubesearchpython import SearchVideos
 from yt_dlp import YoutubeDL
-from VIPMUSIC import app
+from THUNDERMUSIC import app
 
 
 def get_file_extension_from_url(url):
