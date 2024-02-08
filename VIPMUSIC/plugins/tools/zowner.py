@@ -5,7 +5,7 @@ import os
 import re
 import asyncio
 import time
-from VIPMUSIC import app
+from THUNDERMUSIC import app
 
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -21,7 +21,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/itzshukla/STRANGER-MUSIC/fork")
+                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/Altamasf/THUNDERMUSIC/fork")
                 ]
             ]
         ),
@@ -38,7 +38,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/itzshukla/STRANGER-MUSIC/fork")
+                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/Altamasf/THUNDERMUSIC/fork")
                 ]
             ]
         ),
@@ -55,7 +55,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/itzshukla/STRANGER-MUSIC/fork")
+                        "🌱ƨσʋяcɛ🌱", url=f"https://github.com/Altamasf/THUNDERMUSIC/fork")
                 ]
             ]
         ),
