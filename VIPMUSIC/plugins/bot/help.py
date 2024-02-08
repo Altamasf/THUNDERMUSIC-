@@ -3,14 +3,14 @@ from typing import Union
 from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from VIPMUSIC import app
-from VIPMUSIC.utils import first_page, second_page
-from VIPMUSIC.utils.database import get_lang
-from VIPMUSIC.utils.decorators.language import LanguageStart, languageCB
-from VIPMUSIC.utils.inline.help import help_back_markup, private_help_panel
+from THUNDERMUSIC import app
+from THUNDERMUSIC.utils import first_page, second_page
+from THUNDERMUSIC.utils.database import get_lang
+from THUNDERMUSIC.utils.decorators.language import LanguageStart, languageCB
+from THUNDERMUSIC.utils.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_CHAT
 from strings import get_string, helpers
-from VIPMUSIC.misc import SUDOERS
+from THUNDERMUSIC.misc import SUDOERS
 
 @app.on_message(filters.command(["help"]) & filters.private & ~BANNED_USERS)
 @app.on_callback_query(filters.regex("settings_back_helper") & ~BANNED_USERS)
@@ -61,7 +61,7 @@ async def helper_cb(client, CallbackQuery, _):
     if cb == "hb9":
         if CallbackQuery.from_user.id not in SUDOERS:
             return await CallbackQuery.answer(
-                   "😎𝗣𝗔𝗛𝗟𝗘 𓆩𝗦𝗛𝗜𝗩𝗔𝗡𝗦𝗛𓆪 𝗞𝗢 𝗣𝗔𝗣𝗔 𝗕𝗢𝗟 𝗝𝗔𝗞𝗘 😆😆", show_alert=True
+                   "😎𝗣𝗔𝗛𝗟𝗘 ™°‌ 🫧 ☆🇹𝐇𝐔𝐍𝐃𝐄𝐑 𝐎𝐏☆ 𝗞𝗢 𝗣𝗔𝗣𝗔 𝗕𝗢𝗟 𝗝𝗔𝗞𝗘 😆😆", show_alert=True
             )
         else:
             await CallbackQuery.edit_message_text(
