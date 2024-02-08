@@ -1,9 +1,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VIPMUSIC import app
-from VIPMUSIC.misc import SUDOERS
-from VIPMUSIC.utils.database import (
+from THUNDERMUSIC import app
+from THUNDERMUSIC.misc import SUDOERS
+from THUNDERMUSIC.utils.database import (
     get_lang,
     is_maintenance,
     maintenance_off,
