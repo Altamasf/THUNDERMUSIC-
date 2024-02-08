@@ -9,13 +9,13 @@ from pyrogram.types import InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
 
 import config
-from VIPMUSIC import app
-from VIPMUSIC.core.userbot import assistants
-from VIPMUSIC.misc import SUDOERS, mongodb
-from VIPMUSIC.plugins import ALL_MODULES
-from VIPMUSIC.utils.database import get_served_chats, get_served_users, get_sudoers
-from VIPMUSIC.utils.decorators.language import language, languageCB
-from VIPMUSIC.utils.inline.stats import back_stats_buttons, stats_buttons
+from THUNDERMUSIC import app
+from THUNDERMUSIC.core.userbot import assistants
+from THUNDERMUSIC.misc import SUDOERS, mongodb
+from THUNDERMUSIC.plugins import ALL_MODULES
+from THUNDERMUSIC.utils.database import get_served_chats, get_served_users, get_sudoers
+from THUNDERMUSIC.utils.decorators.language import language, languageCB
+from THUNDERMUSIC.utils.inline.stats import back_stats_buttons, stats_buttons
 from config import BANNED_USERS
 
 
