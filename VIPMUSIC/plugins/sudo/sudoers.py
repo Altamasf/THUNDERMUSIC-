@@ -2,12 +2,12 @@ from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from pyrogram.types import Message
 from strings import get_string, helpers
-from VIPMUSIC import app
+from THUNDERMUSIC import app
 from VIPMUSIC.misc import SUDOERS
-from VIPMUSIC.utils.database import add_sudo, remove_sudo
-from VIPMUSIC.utils.decorators.language import language
-from VIPMUSIC.utils.extraction import extract_user
-from VIPMUSIC.utils.inline import close_markup
+from THUNDERMUSIC.utils.database import add_sudo, remove_sudo
+from THUNDERMUSIC.utils.decorators.language import language
+from THUNDERMUSIC.utils.extraction import extract_user
+from THUNDERMUSIC.utils.inline import close_markup
 from config import BANNED_USERS, OWNER_ID
 
 
