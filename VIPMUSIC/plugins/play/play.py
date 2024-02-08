@@ -6,22 +6,22 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from VIPMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from VIPMUSIC.core.call import VIP
-from VIPMUSIC.utils import seconds_to_min, time_to_seconds
-from VIPMUSIC.utils.channelplay import get_channeplayCB
-from VIPMUSIC.utils.decorators.language import languageCB
-from VIPMUSIC.utils.decorators.play import PlayWrapper
-from VIPMUSIC.utils.formatters import formats
-from VIPMUSIC.utils.inline import (
+from THUNDERMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from THUNDERMUSIC.core.call import THUNDER
+from THUNDERMUSIC.utils import seconds_to_min, time_to_seconds
+from THUNDERMUSIC.utils.channelplay import get_channeplayCB
+from THUNDERMUSIC.utils.decorators.language import languageCB
+from THUNDERMUSIC.utils.decorators.play import PlayWrapper
+from THUNDERMUSIC.utils.formatters import formats
+from THUNDERMUSIC.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from VIPMUSIC.utils.logger import play_logs
-from VIPMUSIC.utils.stream.stream import stream
+from THUNDERMUSIC.utils.logger import play_logs
+from THUNDERMUSIC.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
@@ -281,7 +281,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await VIP.stream_call(url)
+                await THUNDER.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
@@ -494,8 +494,8 @@ async def play_music(client, CallbackQuery, _):
     return await mystic.delete()
 
 
-@app.on_callback_query(filters.regex("VIPmousAdmin") & ~BANNED_USERS)
-async def VIPmous_check(client, CallbackQuery):
+@app.on_callback_query(filters.regex("THUNDERmousAdmin") & ~BANNED_USERS)
+async def not THUNDERmous_check(client, CallbackQuery):
     try:
         await CallbackQuery.answer(
             "» ʀᴇᴠᴇʀᴛ ʙᴀᴄᴋ ᴛᴏ ᴜsᴇʀ ᴀᴄᴄᴏᴜɴᴛ :\n\nᴏᴘᴇɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs.\n-> ᴀᴅᴍɪɴɪsᴛʀᴀᴛᴏʀs\n-> ᴄʟɪᴄᴋ ᴏɴ ʏᴏᴜʀ ɴᴀᴍᴇ\n-> ᴜɴᴄʜᴇᴄᴋ ᴀɴᴏɴʏᴍᴏᴜs ᴀᴅᴍɪɴ ᴘᴇʀᴍɪssɪᴏɴs.",
@@ -505,7 +505,7 @@ async def VIPmous_check(client, CallbackQuery):
         pass
 
 
-@app.on_callback_query(filters.regex("VIPPlaylists") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("THUNDERPlaylists") & ~BANNED_USERS)
 @languageCB
 async def play_playlists_command(client, CallbackQuery, _):
     callback_data = CallbackQuery.data.strip()
