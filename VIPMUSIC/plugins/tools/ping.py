@@ -1,12 +1,12 @@
 from datetime import datetime
 from pyrogram import filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from VIPMUSIC import app
-from VIPMUSIC.core.call import VIP
-from VIPMUSIC.utils import bot_sys_stats
-from VIPMUSIC.utils.decorators.language import language
-from VIPMUSIC.utils.inline import supp_markup
-from VIPMUSIC.utils.inline import close_markup
+from THUNDERMUSIC import app
+from THUNDERMUSIC.core.call import THUNDER
+from THUNDERMUSIC.utils import bot_sys_stats
+from THUNDERMUSIC.utils.decorators.language import language
+from THUNDERMUSIC.utils.inline import supp_markup
+from THUNDERMUSIC.utils.inline import close_markup
 from config import BANNED_USERS
 import aiohttp
 import asyncio
