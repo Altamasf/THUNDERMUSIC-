@@ -1,10 +1,10 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VIPMUSIC import app
-from VIPMUSIC.utils.database import get_loop, set_loop
-from VIPMUSIC.utils.decorators import AdminRightsCheck
-from VIPMUSIC.utils.inline import close_markup
+from THUNDERMUSIC import app
+from THUNDERMUSIC.utils.database import get_loop, set_loop
+from THUNDERMUSIC.utils.decorators import AdminRightsCheck
+from THUNDERMUSIC.utils.inline import close_markup
 from config import BANNED_USERS
 
 
