@@ -1,4 +1,4 @@
-from VIPMUSIC import app
+from THUNDERMUSIC import app
 from pyrogram import filters
 from pyrogram.errors import RPCError
 from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, InlineKeyboardButton
@@ -19,7 +19,7 @@ from pyrogram.enums import ParseMode
 from pyrogram import *
 from pyrogram.types import *
 from logging import getLogger
-from VIPMUSIC.utils.vip_ban import admin_filter
+from THUNDERMUSIC.utils.THUNDER_ban import admin_filter
 
 random_photo = [
     "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
