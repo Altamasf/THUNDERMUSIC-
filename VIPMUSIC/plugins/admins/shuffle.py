@@ -3,10 +3,10 @@ import random
 from pyrogram import filters
 from pyrogram.types import Message
 
-from VIPMUSIC import app
-from VIPMUSIC.misc import db
-from VIPMUSIC.utils.decorators import AdminRightsCheck
-from VIPMUSIC.utils.inline import close_markup
+from THUNDERMUSIC import app
+from THUNDERMUSIC.misc import db
+from THUNDERMUSIC.utils.decorators import AdminRightsCheck
+from THUNDERMUSIC.utils.inline import close_markup
 from config import BANNED_USERS
 
 
