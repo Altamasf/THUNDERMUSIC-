@@ -4,10 +4,10 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
-from VIPMUSIC import app
-from VIPMUSIC.misc import SUDOERS
-from VIPMUSIC.utils import get_readable_time
-from VIPMUSIC.utils.database import (
+from THUNDERMUSIC import app
+from THUNDERMUSIC.misc import SUDOERS
+from THUNDERMUSIC.utils import get_readable_time
+from THUNDERMUSIC.utils.database import (
     add_banned_user,
     get_banned_count,
     get_banned_users,
@@ -15,8 +15,8 @@ from VIPMUSIC.utils.database import (
     is_banned_user,
     remove_banned_user,
 )
-from VIPMUSIC.utils.decorators.language import language
-from VIPMUSIC.utils.extraction import extract_user
+from THUNDERMUSIC.utils.decorators.language import language
+from THUNDERMUSIC.utils.extraction import extract_user
 from config import BANNED_USERS
 
 
