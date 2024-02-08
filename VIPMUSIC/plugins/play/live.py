@@ -1,9 +1,9 @@
 from pyrogram import filters
 
-from VIPMUSIC import YouTube, app
-from VIPMUSIC.utils.channelplay import get_channeplayCB
-from VIPMUSIC.utils.decorators.language import languageCB
-from VIPMUSIC.utils.stream.stream import stream
+from THUNDERMUSIC import YouTube, app
+from THUNDERMUSIC.utils.channelplay import get_channeplayCB
+from THUNDERMUSIC.utils.decorators.language import languageCB
+from THUNDERMUSIC.utils.stream.stream import stream
 from config import BANNED_USERS
 
 
