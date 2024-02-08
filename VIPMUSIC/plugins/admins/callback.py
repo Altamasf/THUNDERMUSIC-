@@ -1,12 +1,6 @@
-import asyncio
-
-from pyrogram import filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-
-from VIPMUSIC import YouTube, app
-from VIPMUSIC.core.call import VIP
-from VIPMUSIC.misc import SUDOERS, db
-from VIPMUSIC.utils.database import (
+from THUNDERMUSIC.core.call import THUNDER
+from THUNDERMUSIC.misc import SUDOERS, db
+from THUNDERMUSIC.utils.database import (
     get_active_chats,
     get_lang,
     get_upvote_count,
@@ -17,11 +11,11 @@ from VIPMUSIC.utils.database import (
     music_on,
     set_loop,
 )
-from VIPMUSIC.utils.decorators.language import languageCB
-from VIPMUSIC.utils.formatters import seconds_to_min
-from VIPMUSIC.utils.inline import close_markup, stream_markup, stream_markup_timer
-from VIPMUSIC.utils.stream.autoclear import auto_clean
-from VIPMUSIC.utils.thumbnails import get_thumb
+from THUNDERMUSIC.utils.decorators.language import languageCB
+from THUNDERMUSIC.utils.formatters import seconds_to_min
+from THUNDERMUSIC.utils.inline import close_markup, stream_markup, stream_markup_timer
+from THUNDERMUSIC.utils.stream.autoclear import auto_clean
+from THUNDERMUSIC.utils.thumbnails import get_thumb
 from config import (
     BANNED_USERS,
     SOUNCLOUD_IMG_URL,
@@ -246,7 +240,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 image = None
             try:
-                await VIP.skip_stream(chat_id, link, video=status, image=image)
+                await THUNDER.skip_stream(chat_id, link, video=status, image=image)
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             button = stream_markup(_, chat_id)
@@ -282,7 +276,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 image = None
             try:
-                await VIP.skip_stream(chat_id, file_path, video=status, image=image)
+                await THUNDER.skip_stream(chat_id, file_path, video=status, image=image)
             except:
                 return await mystic.edit_text(_["call_6"])
             button = stream_markup(_, chat_id)
@@ -303,7 +297,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await mystic.delete()
         elif "index_" in queued:
             try:
-                await VIP.skip_stream(chat_id, videoid, video=status)
+                await THUNDER.skip_stream(chat_id, videoid, video=status)
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             button = stream_markup(_, chat_id)
@@ -326,7 +320,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 except:
                     image = None
             try:
-                await VIP.skip_stream(chat_id, queued, video=status, image=image)
+                await THUNDER.skip_stream(chat_id, queued, video=status, image=image)
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             if videoid == "telegram":
