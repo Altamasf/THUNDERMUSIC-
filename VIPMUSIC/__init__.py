@@ -1,8 +1,8 @@
-from VIPMUSIC.core.bot import VIP
-from VIPMUSIC.core.dir import dirr
-from VIPMUSIC.core.git import git
-from VIPMUSIC.core.userbot import Userbot
-from VIPMUSIC.misc import dbb, heroku
+from THUNDERMUSIC.core.bot import THUNDER
+from THUNDERMUSIC.core.dir import dirr
+from THUNDERMUSIC.core.git import git
+from THUNDERMUSIC.core.userbot import Userbot
+from THUNDERMUSIC.misc import dbb, heroku
 
 from SafoneAPI import SafoneAPI
 from .logging import LOGGER
@@ -12,7 +12,7 @@ git()
 dbb()
 heroku()
 
-app = VIP()
+app = THUNDER()
 api = SafoneAPI()
 userbot = Userbot()
 
