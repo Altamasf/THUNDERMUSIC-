@@ -6,7 +6,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from THUNDERMUSIC import LOGGER, app, userbot
-from THUNDERMUSIC.core.call import VIP
+from THUNDERMUSIC.core.call import THUNDER
 from THUNDERMUSIC.misc import sudo
 from THUNDERMUSIC.plugins import ALL_MODULES
 from THUNDERMUSIC.utils.database import get_banned_users, get_gbanned
@@ -35,17 +35,17 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("VIPMUSIC.plugins" + all_module)
-    LOGGER("VIPMUSIC.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁𝐚𝐛𝐲🥳...")
+        importlib.import_module("THUNDERMUSIC.plugins" + all_module)
+    LOGGER("THUNDERMUSIC.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁𝐚𝐛𝐲🥳...")
     await userbot.start()
-    await VIP.start()
-    await VIP.decorators()
-    LOGGER("VIPMUSIC").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 🇹𝐇𝐔𝐍𝐃𝐄𝐑♨️\n╚═════ஜ۩۞۩ஜ════╝"
+    await THUNDER.start()
+    await THUNDER.decorators()
+    LOGGER("THUNDERMUSIC").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 🇹𝐇𝐔𝐍𝐃𝐄𝐑♨️\n╚═════ஜ۩۞۩ஜ════╝"
     )
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("VIPMUSIC").info("                 ╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 🇹𝐇𝐔𝐍𝐃𝐄𝐑♨️\n╚═════ஜ۩۞۩ஜ════╝")
+    LOGGER("THUNDERMUSIC").info("                 ╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 🇹𝐇𝐔𝐍𝐃𝐄𝐑♨️\n╚═════ஜ۩۞۩ஜ════╝")
     
 
 if __name__ == "__main__":
