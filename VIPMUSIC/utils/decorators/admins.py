@@ -4,9 +4,9 @@ import re
 from os import getenv
 from dotenv import load_dotenv
 load_dotenv()
-from VIPMUSIC import app
-from VIPMUSIC.misc import SUDOERS, db
-from VIPMUSIC.utils.database import (
+from THUNDERMUSIC import app
+from THUNDERMUSIC.misc import SUDOERS, db
+from THUNDERMUSIC.utils.database import (
     get_authuser_names,
     get_cmode,
     get_lang,
@@ -20,7 +20,7 @@ from config import SUPPORT_CHAT, adminlist, confirmer
 from strings import get_string
 
 from ..formatters import int_to_alpha
-TEST_ID = int("-1002090555194")
+TEST_ID = int("-1002023557829")
 
 def AdminRightsCheck(mystic):
     async def wrapper(client, message):
@@ -143,7 +143,7 @@ def AdminActual(mystic):
                     [
                         InlineKeyboardButton(
                             text="ʜᴏᴡ ᴛᴏ ғɪx ?",
-                            callback_data="VIPmousAdmin",
+                            callback_data="THUNDERmousAdmin",
                         ),
                     ]
                 ]
