@@ -5,11 +5,11 @@ from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from VIPMUSIC import LOGGER, app, userbot
-from VIPMUSIC.core.call import VIP
-from VIPMUSIC.misc import sudo
-from VIPMUSIC.plugins import ALL_MODULES
-from VIPMUSIC.utils.database import get_banned_users, get_gbanned
+from THUNDERMUSIC import LOGGER, app, userbot
+from THUNDERMUSIC.core.call import VIP
+from THUNDERMUSIC.misc import sudo
+from THUNDERMUSIC.plugins import ALL_MODULES
+from THUNDERMUSIC.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
 
@@ -40,12 +40,12 @@ async def init():
     await userbot.start()
     await VIP.start()
     await VIP.decorators()
-    LOGGER("VIPMUSIC").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 𝗦𝗛𝗜𝗩𝗔𝗡𝗦𝗛-𝗫𝗗♨️\n╚═════ஜ۩۞۩ஜ════╝"
+    LOGGER("VIPMUSIC").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 🇹𝐇𝐔𝐍𝐃𝐄𝐑♨️\n╚═════ஜ۩۞۩ஜ════╝"
     )
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("VIPMUSIC").info("                 ╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 𝗦𝗛𝗜𝗩𝗔𝗡𝗦𝗛-𝗫𝗗♨️\n╚═════ஜ۩۞۩ஜ════╝")
+    LOGGER("VIPMUSIC").info("                 ╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 🇹𝐇𝐔𝐍𝐃𝐄𝐑♨️\n╚═════ஜ۩۞۩ஜ════╝")
     
 
 if __name__ == "__main__":
