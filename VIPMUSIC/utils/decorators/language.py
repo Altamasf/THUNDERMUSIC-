@@ -1,5 +1,5 @@
-from THUNDERMOON.misc import SUDOERS
-from THUNDERMOON.utils.database import get_lang, is_maintenance
+from THUNDERMUSIC.misc import SUDOERS
+from THUNDERMUSIC.utils.database import get_lang, is_maintenance
 from strings import get_string
 
 
