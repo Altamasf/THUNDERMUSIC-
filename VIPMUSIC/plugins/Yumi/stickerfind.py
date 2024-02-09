@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from VIPMUSIC import app
+from THUNDERMUSIC import app
 
 
 @app.on_message(filters.command("st"))
